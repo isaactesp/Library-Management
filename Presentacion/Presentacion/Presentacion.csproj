@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0219F9F-43EA-4758-8277-EF93A3C49B56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBusquedaDoc1a1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusquedaDoc1a1.Designer.cs">
+      <DependentUpon>FBusquedaDoc1a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBusquedaDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusquedaDocumento.Designer.cs">
+      <DependentUpon>FBusquedaDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDocumento.Designer.cs">
+      <DependentUpon>FDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEjemplar.Designer.cs">
+      <DependentUpon>FEjemplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIntroducirID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIntroducirID.Designer.cs">
+      <DependentUpon>FIntroducirID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoDocumentos.Designer.cs">
+      <DependentUpon>FListadoDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListarEjemplares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListarEjemplares.Designer.cs">
+      <DependentUpon>FListarEjemplares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBusqueda1a1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusqueda1a1.Designer.cs">
+      <DependentUpon>FBusqueda1a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBusquedaUsuarioDNI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusquedaUsuarioDNI.Designer.cs">
+      <DependentUpon>FBusquedaUsuarioDNI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoUsuarios.Designer.cs">
+      <DependentUpon>FListadoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAltaPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAltaPrestamo.Designer.cs">
+      <DependentUpon>FAltaPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoPrestamos.Designer.cs">
+      <DependentUpon>FListadoPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBusquedaPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusquedaPrestamo.Designer.cs">
+      <DependentUpon>FBusquedaPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaUsuarioPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaUsuarioPrestamos.Designer.cs">
+      <DependentUpon>FConsultaUsuarioPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDevolverEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDevolverEjemplar.Designer.cs">
+      <DependentUpon>FDevolverEjemplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPal.Designer.cs">
+      <DependentUpon>FPal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPalAdq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPalAdq.Designer.cs">
+      <DependentUpon>FPalAdq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPalSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPalSala.Designer.cs">
+      <DependentUpon>FPalSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSeleccionarEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSeleccionarEjemplar.Designer.cs">
+      <DependentUpon>FSeleccionarEjemplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUsuario.Designer.cs">
+      <DependentUpon>FUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModoUsuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoIdentificador.cs" />
+    <EmbeddedResource Include="FAltaPrestamo.resx">
+      <DependentUpon>FAltaPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBusqueda1a1.resx">
+      <DependentUpon>FBusqueda1a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBusquedaDoc1a1.resx">
+      <DependentUpon>FBusquedaDoc1a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBusquedaDocumento.resx" />
+    <EmbeddedResource Include="FBusquedaUsuarioDNI.resx">
+      <DependentUpon>FBusquedaUsuarioDNI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDocumento.resx">
+      <DependentUpon>FDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEjemplar.resx">
+      <DependentUpon>FEjemplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIntroducirID.resx">
+      <DependentUpon>FIntroducirID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoDocumentos.resx">
+      <DependentUpon>FListadoDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoUsuarios.resx">
+      <DependentUpon>FListadoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListarEjemplares.resx" />
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBusquedaPrestamo.resx">
+      <DependentUpon>FBusquedaPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaUsuarioPrestamos.resx">
+      <DependentUpon>FConsultaUsuarioPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDevolverEjemplar.resx">
+      <DependentUpon>FDevolverEjemplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPal.resx" />
+    <EmbeddedResource Include="FPalAdq.resx" />
+    <EmbeddedResource Include="FPalSala.resx" />
+    <EmbeddedResource Include="FSeleccionarEjemplar.resx" />
+    <EmbeddedResource Include="FUsuario.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LogicaNegocio\LogicaNegocio.csproj">
+      <Project>{4EA249D7-9168-41A9-B002-963FD7C3F93E}</Project>
+      <Name>LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ModeloDominio\ModeloDominio.csproj">
+      <Project>{D83000C7-542A-4C16-843E-945C9A01737E}</Project>
+      <Name>ModeloDominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Persistencia\Persistencia.csproj">
+      <Project>{0d12462c-dfb1-4998-a84f-563181962c76}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

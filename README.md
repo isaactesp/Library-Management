@@ -56,7 +56,7 @@ La solución está dividida en los siguientes proyectos:
 
 1.  Clonar el repositorio:
     ```bash
-    git clone [https://github.com/tu-usuario/GestionBiblioteca10.git](https://github.com/tu-usuario/GestionBiblioteca10.git)
+    git clone [https://github.com/isaactesp/GestionBiblioteca10.git](https://github.com/isaactesp/GestionBiblioteca10.git)
     ```
 2.  Abrir el archivo `GestionBiblioteca10.sln` con Visual Studio.
 3.  Restaurar los paquetes NuGet si es necesario.
@@ -66,5 +66,3 @@ La solución está dividida en los siguientes proyectos:
 ## ✒️ Autores
 
 * **Equipo de Desarrollo** - *Alberto Hidalgo, Jon Jimenez, Isaac Terés*
-
----
